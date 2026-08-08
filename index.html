@@ -205,7 +205,94 @@
     <div class="cta-split reveal">
       <div class="cta-split__panel">
         <div>
-          <div class="eyebrow">Get In Touch</div>
+                   .nav {
+            position: relative;
+          }
+          
+          .nav .wrap {
+            position: relative;
+          }
+          
+          @media (max-width: 860px) {
+            .nav__toggle {
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              flex-direction: column;
+              gap: 4px;
+              width: 44px;
+              height: 44px;
+              border: 0;
+              background: transparent;
+              cursor: pointer;
+              z-index: 1100;
+            }
+          
+            .nav__links {
+              position: fixed;
+              top: 72px;
+              left: 0;
+              right: 0;
+              bottom: 0;
+              display: none;
+              flex-direction: column;
+              gap: 0.85rem;
+              padding: 1rem 1.25rem 2rem;
+              background: #fff;
+              overflow-y: auto;
+              z-index: 1000;
+              box-shadow: 0 18px 40px rgba(0, 0, 0, 0.12);
+            }
+          
+            .nav__links.nav__links--open {
+              display: flex;
+            }
+          
+            .nav__links a {
+              display: block !important;
+              width: 100%;
+              padding: 0.8rem 0;
+              border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+              font-size: 1rem;
+            }
+          
+            .nav__links .nav__cta {
+              display: inline-block !important;
+              margin-top: 0.3rem;
+            }
+          }          document.addEventListener('DOMContentLoaded', () => {
+            const navToggle = document.querySelector('.nav__toggle');
+            const navLinks = document.querySelector('.nav__links');
+          
+            if (!navToggle || !navLinks) return;
+          
+            const closeMenu = () => {
+              navLinks.classList.remove('nav__links--open');
+              navToggle.setAttribute('aria-expanded', 'false');
+            };
+          
+            navToggle.addEventListener('click', (event) => {
+              event.stopPropagation();
+              const isOpen = navLinks.classList.toggle('nav__links--open');
+              navToggle.setAttribute('aria-expanded', String(isOpen));
+            });
+          
+            navLinks.querySelectorAll('a').forEach((link) => {
+              link.addEventListener('click', closeMenu);
+            });
+          
+            document.addEventListener('click', (event) => {
+              if (!navLinks.contains(event.target) && !navToggle.contains(event.target)) {
+                closeMenu();
+              }
+            });
+          
+            window.addEventListener('resize', () => {
+              if (window.innerWidth > 860) closeMenu();
+            });
+          });          <button class="nav__toggle" aria-label="Menu" aria-expanded="false">
+            <span></span><span></span><span></span>
+          </button> <div class="eyebrow">Get In Touch</div>
           <h3>Have a project in mind?</h3>
         </div>
         <div>
