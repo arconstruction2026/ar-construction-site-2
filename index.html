@@ -205,98 +205,11 @@
     <div class="cta-split reveal">
       <div class="cta-split__panel">
         <div>
-                   .nav {
-            position: relative;
-          }
-          
-          .nav .wrap {
-            position: relative;
-          }
-          
-          @media (max-width: 860px) {
-            .nav__toggle {
-              display: flex;
-              align-items: center;
-              justify-content: center;
-              flex-direction: column;
-              gap: 4px;
-              width: 44px;
-              height: 44px;
-              border: 0;
-              background: transparent;
-              cursor: pointer;
-              z-index: 1100;
-            }
-          
-            .nav__links {
-              position: fixed;
-              top: 72px;
-              left: 0;
-              right: 0;
-              bottom: 0;
-              display: none;
-              flex-direction: column;
-              gap: 0.85rem;
-              padding: 1rem 1.25rem 2rem;
-              background: #fff;
-              overflow-y: auto;
-              z-index: 1000;
-              box-shadow: 0 18px 40px rgba(0, 0, 0, 0.12);
-            }
-          
-            .nav__links.nav__links--open {
-              display: flex;
-            }
-          
-            .nav__links a {
-              display: block !important;
-              width: 100%;
-              padding: 0.8rem 0;
-              border-bottom: 1px solid rgba(0, 0, 0, 0.08);
-              font-size: 1rem;
-            }
-          
-            .nav__links .nav__cta {
-              display: inline-block !important;
-              margin-top: 0.3rem;
-            }
-          }          document.addEventListener('DOMContentLoaded', () => {
-            const navToggle = document.querySelector('.nav__toggle');
-            const navLinks = document.querySelector('.nav__links');
-          
-            if (!navToggle || !navLinks) return;
-          
-            const closeMenu = () => {
-              navLinks.classList.remove('nav__links--open');
-              navToggle.setAttribute('aria-expanded', 'false');
-            };
-          
-            navToggle.addEventListener('click', (event) => {
-              event.stopPropagation();
-              const isOpen = navLinks.classList.toggle('nav__links--open');
-              navToggle.setAttribute('aria-expanded', String(isOpen));
-            });
-          
-            navLinks.querySelectorAll('a').forEach((link) => {
-              link.addEventListener('click', closeMenu);
-            });
-          
-            document.addEventListener('click', (event) => {
-              if (!navLinks.contains(event.target) && !navToggle.contains(event.target)) {
-                closeMenu();
-              }
-            });
-          
-            window.addEventListener('resize', () => {
-              if (window.innerWidth > 860) closeMenu();
-            });
-          });          <button class="nav__toggle" aria-label="Menu" aria-expanded="false">
-            <span></span><span></span><span></span>
-          </button> <div class="eyebrow">Get In Touch</div>
+          <div class="eyebrow">Get In Touch</div>
           <h3>Have a project in mind?</h3>
         </div>
         <div>
-          <p>Whether you're planning a public infrastructure project or seeking a dependable construction partner, our team is ready to deliver engineering solutions with professionalism, quality, and confidence.</p>
+          <p>Our team is here to answer your questions and provide expert guidance. Reach out to discuss your needs.</p>
           <br>
           <a href="contact.html" class="btn btn--outline-dark">Work With Us <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
         </div>
@@ -308,7 +221,7 @@
           <h3>See more of our work</h3>
         </div>
         <div>
-          <p>Explore a portfolio of infrastructure projects delivered with precision, professionalism, and an unwavering commitment to construction excellence.</p>
+          <p>Explore our portfolio of civil, infrastructure and government sector projects across Sri Lanka.</p>
           <br>
           <a href="projects.html" class="btn btn--outline-dark">View All <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
         </div>
