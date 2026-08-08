@@ -18,7 +18,44 @@
       <a href="projects.html">Projects</a>
       <a href="services.html">Services</a>
       <a href="about.html">About</a>
-      <a href="contact.html" class="nav__cta">Contact Us</a>
+      <a href="contact.html" class="nav__cta">      /* ...existing code... */
+      @media (max-width: 860px) {
+        .nav__toggle {
+          display: flex;
+        }
+      
+        .nav__links {
+          display: none;
+          position: fixed;
+          top: 72px;
+          left: 0;
+          right: 0;
+          bottom: 0;
+          background: #fff;
+          flex-direction: column;
+          gap: 1rem;
+          padding: 1.5rem;
+          overflow-y: auto;
+          z-index: 20;
+        }
+      
+        .nav__links.nav__links--open {
+          display: flex;
+        }
+      
+        .nav__links a {
+          display: block;
+          width: 100%;
+        }
+      }      const navToggle = document.querySelector('.nav__toggle');
+      const navLinks = document.querySelector('.nav__links');
+      
+      if (navToggle && navLinks) {
+        navToggle.addEventListener('click', () => {
+          const open = navLinks.classList.toggle('nav__links--open');
+          navToggle.setAttribute('aria-expanded', open);
+        });
+      }Contact Us</a>
     </nav>
     <button class="nav__toggle" aria-label="Menu"><span></span><span></span><span></span></button>
   </div>
