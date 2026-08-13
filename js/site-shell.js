@@ -49,7 +49,7 @@
             <div class="footer__label">Follow Us</div>
             <div class="footer__social">
               <a href="https://www.linkedin.com/company/ar-construction-works/" target="_blank" rel="noopener" aria-label="AR Construction on LinkedIn"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M6.94 8.4H3.56V20h3.38V8.4zM5.25 3C4.1 3 3.3 3.8 3.3 4.85c0 1.02.78 1.85 1.9 1.85h.02c1.16 0 1.94-.83 1.94-1.85C7.15 3.8 6.39 3 5.25 3zM20.45 20h-3.38v-6.2c0-1.56-.56-2.62-1.96-2.62-1.07 0-1.7.72-1.98 1.42-.1.25-.13.6-.13.95V20h-3.38s.05-10.72 0-11.6h3.38v1.64c.45-.7 1.25-1.7 3.04-1.7 2.22 0 3.88 1.45 3.88 4.57V20z"/></svg></a>
-              <a href="https://www.facebook.com/" target="_blank" rel="noopener" aria-label="AR Construction on Facebook"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M22 12.06C22 6.51 17.52 2 12 2S2 6.51 2 12.06c0 5 3.66 9.13 8.44 9.94v-7.03H7.9v-2.91h2.54V9.85c0-2.5 1.49-3.89 3.77-3.89 1.09 0 2.23.2 2.23.2v2.45h-1.26c-1.24 0-1.63.77-1.63 1.56v1.89h2.78l-.44 2.91h-2.34V22c4.78-.81 8.44-4.94 8.44-9.94z"/></svg></a>
+              <a href="https://www.facebook.com/share/1GDKPnzS3Y/?mibextid=wwXIfr" target="_blank" rel="noopener" aria-label="AR Construction on Facebook"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M22 12.06C22 6.51 17.52 2 12 2S2 6.51 2 12.06c0 5 3.66 9.13 8.44 9.94v-7.03H7.9v-2.91h2.54V9.85c0-2.5 1.49-3.89 3.77-3.89 1.09 0 2.23.2 2.23.2v2.45h-1.26c-1.24 0-1.63.77-1.63 1.56v1.89h2.78l-.44 2.91h-2.34V22c4.78-.81 8.44-4.94 8.44-9.94z"/></svg></a>
             </div>
           </div>
         </div>
